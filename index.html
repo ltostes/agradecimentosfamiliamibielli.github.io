@@ -38,7 +38,7 @@
 
     <script>
         window.addEventListener('DOMContentLoaded', (event) => {
-            fetch('donations.csv')
+            fetch('donations.csv?' + new Date().getTime())
                 .then(response => response.text())
                 .then(text => {
                     let data = parseCSV(text);
@@ -48,7 +48,7 @@
         });
         
         window.addEventListener('DOMContentLoaded', (event) => {
-            fetch('contributors.csv')
+            fetch('contributors.csv?' + new Date().getTime())
                 .then(response => response.text())
                 .then(text => {
                     let data = parseCSV(text);

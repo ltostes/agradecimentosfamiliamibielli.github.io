@@ -26,7 +26,6 @@
     <div class="container">
         <h1 class="text-center mt-5">A família Mibielli e amigos agradecem imensamente pela ajuda!</h1>
         <p id="campaign-summary" class="text-center"></p>
-
         <h2 class="mt-4 centered-title">Contribuidores</h2>
         <div id="donor-list" class="donor-list"></div>
         </br></br>
@@ -75,7 +74,7 @@
             const totalAmount = data.reduce((sum, item) => sum + parseInt(item.value), 0);
             const totalContributions = data.length;
             document.getElementById("campaign-summary").innerText = 
-                `Até agora conseguimos um total de ${numformat(totalAmount)} através de ${totalContributions} contribuições.`;
+                `Até agora, conseguimos um total de ${numformat(totalAmount)} através de ${totalContributions} contribuições. Última atualização em 2023-12-20 9:45`;
         }
 
         function displayContributors(data) {

@@ -96,7 +96,7 @@
             const totalAmount = data.reduce((sum, item) => sum + parseInt(item.value), 0);
             const totalContributions = data.length;
             document.getElementById("campaign-summary").innerText = 
-                `Até agora, conseguimos um total de ${numformat(totalAmount)} através de ${totalContributions} contribuições. Última atualização em ${d3.max(data, d => d.datetime)}`;
+                `Obrigado a todos pelas generosas contribuições! Arrecadamos um total de ${numformat(totalAmount)} através de ${totalContributions} contribuidores!`; // Última atualização em ${d3.max(data, d => d.datetime)}`;
         }
 
         function displayContributors(data) {
